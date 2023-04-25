@@ -1,0 +1,117 @@
+body{
+    font-family: 'Open Sans', sans-ser;
+    background-color: #333333;
+}
+.container{
+    width: 40%;
+    margin: auto;
+    padding: 10px;
+    text-transform: capitalize;
+    background-color: #444444;
+}
+.container > h2 {
+    text-align: center;
+    color: white;
+}
+.parent div{
+    padding: 10px;
+    margin: 5px;
+    border-radius: 4px;
+    position: relative;
+    background-color: white;
+}
+
+.parent  div span{
+    font-size: 14px;
+    font-weight: bold; 
+    background-color: #e772b7;
+    color: black;
+    padding: 4px;
+    border-radius: 20px;
+}
+input[type="checkbox"]{
+    position: absolute;
+    bottom: 5px;
+    right: 10px;
+    width: 15px;
+    height: 15px;
+    accent-color: #4908B0;
+    mix-blend-mode: multiply;
+    cursor: pointer;
+}
+i.rmv{
+    position: absolute;
+    top: 15px ;
+    right: 15px;
+    color: #7E1744;
+    cursor: pointer;
+}
+i.update{
+    position: absolute;
+    top: 15px ;
+    right: 40px;
+    color: yellow;
+    cursor: pointer; 
+}
+.tasks-form div input , #search{
+    width: 100%;
+    padding: 10px 5px;
+    border-radius: 4px;
+    margin: 5px 0;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+::placeholder{
+    padding: 5px;
+}
+
+.tasks-form{
+    text-align: center;
+}
+.btn ,.edit{
+    display: block;
+    width: 100%;
+    padding: 10px 30px ;
+    background-color: #937EFF;
+    color: white;
+    font-weight: bold;
+    border-radius: 4px;
+    text-transform: capitalize;
+    border: none;
+    cursor: pointer;
+}
+.edit{
+    padding: 5px 20px;
+}
+.btn:hover{
+    background-color: #6b4efd;
+}
+.update-form{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+.update-form div{
+    padding: 5px;
+    margin: 0;
+}
+.footer{
+    background-color: black;
+    color: white;
+    padding: 5px;
+    margin: 5px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+@media (max-width: 575.98px) {
+
+    .container{
+        width: 90%;
+    }
+
+}

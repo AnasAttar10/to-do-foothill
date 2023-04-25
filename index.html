@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto:ital,wght@0,400;0,500;1,100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Your Tasks </h2>
+        <form action="" id="tasks-form" class="tasks-form">
+            <div>
+                <input type="text" name="text" id="text" placeholder="Enter Your Task ">
+            </div>
+            <div>
+                <input type="text" name="assignee" id="assignee" placeholder="Enter The Assignee ">
+            </div>
+            <input type="submit" value="ADD" class="btn">
+            <hr>
+            <input type="text" name="search" id="search" placeholder="Search">
+        </form>
+        <div id="parent" class="parent"></div>
+        <div id="footer" class="footer">
+            <div>
+                <span>to do : </span>
+                <span id="num_toDo"></span>
+            </div>
+            <div>
+                <span>Done : </span>
+                <span id="num_Done"></span>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="js/model.js"></script>
+    <script src="js/render.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
